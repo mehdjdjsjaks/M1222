@@ -31,7 +31,7 @@ function sendMessage() {
     newMessage.style.maxWidth = "70%";
     newMessage.style.marginRight = "auto";
     newMessage.style.marginLeft = "10px";
-    
+
     chatBox.appendChild(newMessage);
     input.value = "";
 
@@ -41,3 +41,11 @@ function sendMessage() {
     }
   }
 }
+
+// صدای خوشامدگویی
+window.addEventListener('load', function() {
+  const audio = document.getElementById('welcomeAudio');
+  audio.play().catch(() => {
+    console.log('صدا به خاطر محدودیت مرورگر، با کلیک کاربر فعال می‌شود.');
+  });
+});
