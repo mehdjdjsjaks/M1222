@@ -113,3 +113,9 @@ button {
     background: #1e1e1e;
   }
 }
+
+/* آیکون میکروفن */
+#micButton {
+  font-size: 28px;
+  cursor: pointer;
+}
