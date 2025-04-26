@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axcel AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- نوار بالایی -->
+  <header>
+    <div class="header-left">Axcel AI</div>
+    <div class="header-right" onclick="toggleMenu()">&#9776;</div>
+  </header>
+  
+  <!-- منوی کشویی -->
+  <div id="sideMenu" class="side-menu">
+    <h3>چت‌های قبلی</h3>
+    <p>فعلاً هیچی نیست!</p>
+  </div>
+
+  <!-- خط جدا کننده -->
+  <hr class="divider">
+
+  <!-- صفحه چت -->
+  <main>
+    <div id="welcomeMessage" class="welcome-message">چطور میتونم بهتون کمک کنم؟</div>
+    <div id="chatBox" class="chat-box"></div>
+  </main>
+
+  <!-- نوار پایین -->
+  <div class="input-area">
+    <input id="messageInput" type="text" placeholder="پیام خود را بنویسید...">
+    <button id="sendButton">&#9993;</button> <!-- آیکون نامه برای ارسال -->
+    <button id="imageButton">&#128247;</button> <!-- آیکون دوربین عکس فقط نمایشی -->
+  </div>
+
+  <!-- صدای خوشامدگویی -->
+  <audio id="welcomeAudio" src="welcome.mp3" autoplay></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
