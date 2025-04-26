@@ -10,14 +10,14 @@
 
   <!-- نوار بالایی -->
   <header>
-    <div class="header-left">Axcel AI</div>
-    <div class="header-right" onclick="toggleMenu()">&#9776;</div>
+    <div class="header-right">Axcel AI</div>
+    <div class="header-left" onclick="toggleMenu()">&#9776;</div>
   </header>
-  
+
   <!-- منوی کشویی -->
   <div id="sideMenu" class="side-menu">
     <h3>چت‌های قبلی</h3>
-    <p>فعلاً هیچی نیست!</p>
+    <p>فعلاً چیزی اینجا نیست!</p>
   </div>
 
   <!-- خط جدا کننده -->
@@ -31,13 +31,15 @@
 
   <!-- نوار پایین -->
   <div class="input-area">
+    <div id="plusButton" class="plus-button">+</div>
     <input id="messageInput" type="text" placeholder="پیام خود را بنویسید...">
     <button id="sendButton">&#9993;</button> <!-- آیکون نامه برای ارسال -->
-    <button id="imageButton">&#128247;</button> <!-- آیکون دوربین عکس فقط نمایشی -->
   </div>
 
   <!-- صدای خوشامدگویی -->
-  <audio id="welcomeAudio" src="welcome.mp3" autoplay></audio>
+  <audio id="welcomeAudio" autoplay>
+    <source src="welcome.mp3" type="audio/mpeg">
+  </audio>
 
   <script src="script.js"></script>
 </body>
