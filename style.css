@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   background: white;
   color: black;
   transition: background 0.3s, color 0.3s;
@@ -21,6 +21,15 @@ header {
   font-size: 20px;
 }
 
+.header-right {
+  font-weight: bold;
+}
+
+.header-left {
+  font-size: 28px;
+  cursor: pointer;
+}
+
 .divider {
   margin: 0;
   border: 0;
@@ -30,7 +39,7 @@ header {
 .welcome-message {
   text-align: center;
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: gray;
 }
@@ -38,6 +47,7 @@ header {
 .chat-box {
   padding: 20px;
   min-height: 300px;
+  padding-bottom: 100px; /* جا برای اینپوت پایین */
 }
 
 .input-area {
@@ -49,6 +59,21 @@ header {
   bottom: 0;
   width: 100%;
   background: inherit;
+  gap: 10px;
+}
+
+/* دکمه پلاس */
+.plus-button {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
 }
 
 input[type="text"] {
@@ -56,7 +81,6 @@ input[type="text"] {
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  margin: 0 10px;
 }
 
 button {
@@ -64,7 +88,6 @@ button {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  margin: 0 5px;
 }
 
 /* منوی کشویی */
